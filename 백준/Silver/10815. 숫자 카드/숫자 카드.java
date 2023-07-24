@@ -23,14 +23,12 @@ public class Main {
 
         for(int i = 0; i<M ; i++){
             if(Nset.contains(Integer.parseInt(Mnum[i]))) {
-                result[i] = 1;
+                pw.print("1 ");
             }
 
             else {
-                result[i] = 0;
+                pw.print("0 ");
             }
-
-            pw.print(result[i] + " ");
         }
 
 
