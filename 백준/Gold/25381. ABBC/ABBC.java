@@ -4,7 +4,6 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.*;
 
-
 public class Main {
     public static void main(String[] args) throws IOException{
 
@@ -21,6 +20,7 @@ public class Main {
             temp.add(str.charAt(i));
         }
 
+        //B, C 존재 유무 확인 후 제거
         while(true){
             if(temp.contains('B') && temp.contains('C')) {
                 if(temp.indexOf('B') < temp.indexOf('C')) {
@@ -35,36 +35,18 @@ public class Main {
             }
         }
 
-        for(int i = 0; i< temp.size(); i++){
-            deque.offerLast(temp.get(i));
-        }
-        
-        temp.clear();
-
-        while(!deque.isEmpty()){
-            if(deque.peekFirst() == 'A') {
-                deque.pollFirst();
-                for(int i = 0; i<deque.size();i++){
-                    if(deque.peekFirst() == 'B') {
-                        cnt++;
-                        deque.pollFirst();
-                        break;
-                    }
-                    else {
-                        temp.add(deque.pollFirst());
-                    }
+        // 남은 A,B로 규칙 확인
+        while(true){
+            if(temp.contains('A') && temp.contains('B')) {
+                if(temp.indexOf('A') < temp.indexOf('B')) {
+                    temp.remove(Character.valueOf('A'));
+                    temp.remove(Character.valueOf('B'));
+                    cnt++;
+                } else {
+                    temp.remove(Character.valueOf('B'));
                 }
-                Collections.reverse(temp);
-
-                for(int i = 0; i<temp.size(); i++){
-                    deque.offerFirst(temp.get(i));
-                }
-
-                temp.clear();
-            }
-
-            else {
-                deque.pollFirst();
+            } else {
+                break;
             }
         }
 
