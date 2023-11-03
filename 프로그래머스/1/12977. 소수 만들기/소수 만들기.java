@@ -1,20 +1,18 @@
-
 class Solution {
-    
+
     static int count;
     static int answer;
     static int sum;
     static int[] choice;
-    
+
     public int solution(int[] nums) {
         int answer = 0;
         choice = new int[3];
-        sum = 0;
 
         answer = nCr(0,0,nums);
         return answer;
     }
-    
+
     private static int nCr(int cnt,int start,int[] nums) {
         sum = 0;
         count = 0;
