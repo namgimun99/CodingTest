@@ -1,6 +1,6 @@
 # [level 3] 최고의 집합 - 12938 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12938?gad_source=1&gad_campaignid=22356298761&gbraid=0AAAAAC_c4nAOeXxg9igrwjt2ICCNguC1N&gclid=Cj0KCQjwuKnGBhD5ARIsAD19Rsa-pBlBzf7bkPyD-hyhDaOu51Z9Fq9s7S4QazM_02lsFZqwx7UKmSMaAixREALw_wcB) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/12938?gad_source=1&gad_campaignid=22356298761&gbraid=0AAAAAC_c4nC8NU7Ls13NOA289WZIx3_EP&gclid=Cj0KCQjw267GBhCSARIsAOjVJ4EETHm-rUdzbYTmYWE9JYhz7R9_826QTa71IVLXolYmvPb3b-munaYaAqYaEALw_wcB) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 09월 18일 22:50:13
+2025년 09월 18일 22:50:23
 
 ### 문제 설명
 
